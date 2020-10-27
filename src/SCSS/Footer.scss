@@ -1,0 +1,35 @@
+
+@import './index.scss';
+
+
+.footer {
+	text-align: center;
+	padding: 2rem 0rem;
+
+	.social_icon {
+		margin-bottom: 2rem;
+
+		i {
+			font-size: 3rem;
+			margin: 0rem .2rem;
+			color: grey;
+			cursor: pointer;
+		}
+	}
+
+	.conditions {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+
+		p {
+			margin: 0rem .5rem;
+			cursor: pointer;
+
+			&:hover {
+				color: $highColor;
+			}
+		}
+	}
+}

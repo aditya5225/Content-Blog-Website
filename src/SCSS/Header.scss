@@ -1,0 +1,130 @@
+
+@import './index.scss';
+
+
+.header {
+	padding: 0;
+
+
+	div {
+		/*display: flex;*/
+		justify-content: space-between;
+		align-items: center;
+		margin: .5rem 0rem;
+	}
+
+	.sign {
+		padding: 0;
+
+		div {
+			width: 4rem;
+		}
+	}
+
+
+	.logo {
+		text-align: center !important;
+		padding: 0rem;
+
+		h1 {
+			padding: 0rem !important;
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		@include media_md {
+			text-align: left !important;
+		}
+
+		@include media_sm {
+			text-align: center !important;
+		}
+	}
+
+
+	.search {
+
+		div {
+			text-align: right;
+			margin-left: auto;
+			position: relative;
+			z-index: 200;
+
+			&:focus-within input{
+				width: 16rem;
+				padding: 0rem .1vw;
+
+				@include media_sm {
+					width: 30vw;
+				}
+
+				@media (max-width: 570px) {
+					width: 50vw;
+				}
+			}
+
+			button {
+				right: 0;
+				position: absolute;
+				border: none;
+				height: 2.5rem;
+				width: 6rem;
+				outline: none;
+				z-index: 1;
+
+				svg {
+					margin-right: .5rem;
+				}
+			}
+
+			input {
+				width: 0rem;
+				position: relative;
+				z-index: 1;
+				border: none;
+				height: 2.5rem;
+				background-color: white;
+				border-radius: 1px;
+				box-shadow: 0px 0px .5px;
+				outline: none;
+				transition: all .3s;
+				padding: 0rem 0rem;
+			}
+		}
+	}
+
+
+	@include media_md {
+
+		.sign {
+			order: 3;
+			padding: 0;
+
+			div {
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+		.logo {
+			order: 1;
+
+			h1 {
+				font-size: 2rem;
+				margin: 0 !important;
+			}
+		}
+
+		.search {
+			order: 2;
+			padding: 0;
+			justify-content: flex-end;
+		}
+
+		.navi {
+			order: 4;
+			padding: 0rem;
+		}
+	}
+}
+

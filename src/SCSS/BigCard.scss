@@ -1,0 +1,38 @@
+
+@import './index.scss';
+
+
+
+.bigcard {
+	margin: 1rem 0rem;
+
+	.card-body {
+		padding: 0;
+		margin-top: 1rem;
+	
+		h6 {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.2rem;
+			margin-top: -.5rem;
+		}
+
+		p {
+			&:nth-child(1) {
+				color: $highColor;
+			}
+
+			&:nth-child(3) {
+				color: grey;
+				opacity: .5;
+			}
+
+			&:nth-child(4) {
+				white-space: normal;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    /*width: 20rem;*/
+			    height: 3rem;
+			}
+		}
+	}
+}

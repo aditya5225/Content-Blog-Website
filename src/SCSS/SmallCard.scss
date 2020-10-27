@@ -1,0 +1,34 @@
+
+@import './index.scss';
+
+.smallcard {
+	margin: 1.5rem 0rem;
+	border: 0;
+
+	.image {
+		padding: 0rem;
+
+		img {
+			width: 12rem;
+		}
+	}
+
+	.card-body {
+		padding: .2rem 0rem;
+
+		h5 {
+			font-family: 'Playfair Display', serif;
+		}
+
+		p {
+			&:nth-child(1) {
+				color: $highColor;
+			}
+
+			&:nth-child(3) {
+				color: grey;
+				opacity: .5;
+			}
+		}
+	}
+}

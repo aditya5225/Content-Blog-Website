@@ -1,0 +1,47 @@
+
+@import './index.scss';
+
+.subscribecard {
+	padding: 1.2rem;
+	margin: 1rem 0rem;
+	background-color: white;
+
+	.card-body {
+		text-align: center;
+		padding: 0rem;
+		background-color: transparent;
+
+		h6 {
+			margin-top: 1.1rem;
+			background-color: transparent;
+			font-weight: bold;
+			font-family: 'Playfair Display', serif;
+		}
+
+		p {
+			background-color: transparent;
+			margin-top: .8rem;
+		}
+
+		input {
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			padding: .5rem;
+			border-radius: 5px;
+			outline: none;
+		}
+
+		button {
+			margin-top: 1rem;
+			width: 100%;
+			background-color: $highColor;
+			outline: none;
+			border: none;
+			padding: .5rem;
+			border-radius: 5px;
+			color: white;
+			font-size: 1.2rem;
+		}
+	}
+}

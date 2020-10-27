@@ -1,0 +1,44 @@
+
+@import './index.scss';
+
+.carouselcard {
+	padding: 2rem 2rem;
+	background-color: white;
+	max-width: 32rem;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+
+	.socialIcons {
+		background-color: white;
+		margin-bottom: 1rem;
+
+		i {
+			color: grey;
+			margin: 0px .3rem;
+			font-size: 1.5rem;
+			cursor: pointer;
+		}
+	}
+
+	h2 {
+		background-color: white;
+		font-family: 'Playfair Display', serif;
+		margin: 0;
+		cursor: pointer;
+	}
+
+	p {
+		background-color: white;
+		margin: .6rem 0rem;
+
+		&:nth-child(2) {
+			color: $highColor;
+			cursor: pointer;
+		}
+
+		&:nth-child(5) {
+			color: grey;
+		}
+	}
+}

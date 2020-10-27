@@ -1,0 +1,83 @@
+
+@import './index.scss';
+
+
+.middlebox {
+
+	h5 {
+		width: 20rem;
+
+		@include media_md {
+			width: 14rem;
+		}
+
+		@include media_sm {
+			width: 100%;
+		}
+	}
+
+	p {
+
+		&:nth-child(1) {
+			margin-bottom: .5rem;
+		}
+	}
+
+	.card-body {
+		padding: 0rem 1rem;
+	}
+
+	.lifestyle {
+
+		.title {
+			padding-top: 2rem;
+			padding-bottom: .5rem;
+
+			h6 {
+				font-size: 1.2rem;
+				font-weight: bold;
+				z-index: 2;
+				padding: 0px;
+				background-color: transparent;
+			}
+
+			div {
+				margin-top: -.9rem;
+				border: solid .2rem $highColor;
+				background-color: $highColor;
+				width: 5.8rem;
+				height: .5rem;
+				z-index: 1;
+				margin-top: -1rem;
+			}
+		}
+
+	}
+
+	.travel {
+
+		.title {
+			padding-top: 2rem;
+			padding-bottom: .5rem;
+
+			h6 {
+				font-size: 1.2rem;
+				font-weight: bold;
+				z-index: 2;
+				padding: 0px;
+				background-color: transparent;
+			}
+
+			div {
+				margin-top: -.9rem;
+				border: solid .2rem $highColor;
+				background-color: $highColor;
+				width: 4.5rem;
+				height: .5rem;
+				z-index: 1;
+				margin-top: -1rem;
+			}
+		}
+
+	}
+}

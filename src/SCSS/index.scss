@@ -1,0 +1,53 @@
+
+
+/*---------------- Variable ----------------*/
+
+
+$bgcolor: #F0F0F0;
+$highColor: #C1A57B;
+$dateColor: #C1A57B;
+
+
+
+/*---------------- Font ----------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+/*---------------- Class ----------------*/
+
+
+.bor {
+	border: solid 1px red;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	background-color: $bgcolor;
+	font-family: 'Jost', sans-serif;
+}
+
+/*---------------- Media Query Breakpoint ----------------*/
+
+
+@mixin media_xsm {
+	@media (max-width: 575.98px) { @content; }
+}
+
+@mixin media_sm {
+	@media (max-width: 767.98px) { @content; }
+}
+
+@mixin media_md {
+	@media (max-width: 991.98px) { @content; }
+}
+
+@mixin media_lg {
+	@media (max-width: 1199.98px) { @content; }
+}

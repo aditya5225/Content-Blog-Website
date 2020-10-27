@@ -1,0 +1,52 @@
+
+@import './index.scss';
+
+
+.carousel {
+	margin: 2rem 0rem;
+
+	.carousel-inner {
+
+		img {
+			height: 40rem;
+			object-fit: cover;
+		}
+	}
+
+	.carousel-indicators {
+		width: 20vw;
+		bottom: -3rem;
+		margin-right: auto;
+		margin-left: auto;
+
+		li {
+			margin: 0rem .5rem; 
+			border-radius: 50%;
+			height: .5rem;
+			width: .5rem;
+			background-color: grey;
+		}
+
+		.active {
+			background-color: $highColor;
+		}
+	}
+
+	.carousel-control-prev {
+		opacity: 1;
+		height: calc(2.5vh + 2.5vw);
+		width: calc(2.5vh + 2.5vw);
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: -2vw;
+	}
+
+	.carousel-control-next {
+		opacity: 1;
+		height: calc(2.5vh + 2.5vw);
+		width: calc(2.5vh + 2.5vw);
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: -2vw;
+	}
+}
